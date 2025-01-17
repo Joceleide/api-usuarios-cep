@@ -1,0 +1,27 @@
+# Framework principal e dependências
+fastapi>=0.104.1
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.2
+python-multipart>=0.0.6  # Para formulários e upload de arquivos
+
+# Segurança
+python-jose[cryptography]>=3.3.0  # Para JWT
+passlib[bcrypt]>=1.7.4  # Para hash de senhas
+pyjwt>=2.8.0  # Para manipulação de JWT
+
+# Banco de dados
+sqlite3  # Já vem com Python
+redis>=5.0.1  # Para cache
+
+# Requisições HTTP
+requests>=2.31.0  # Para chamadas à API ViaCEP
+
+# Configuração
+python-dotenv>=1.0.0  # Para carregar variáveis de ambiente
+pydantic-settings>=2.1.0  # Para configurações tipadas
+
+# Email
+email-validator>=2.1.0  # Para validação de email
+
+# Logging (opcional, mas recomendado)
+structlog>=23.2.0  # Para logging estruturado
